@@ -60,7 +60,7 @@ class App
             require_once $this->request->resource()->path;
 
         } catch (\Exception $e) {
-            echo "Exception::Server Error".$e->getMessage();
+            echo 'Exception::Server Error'.$e->getMessage();
         }
     }
 

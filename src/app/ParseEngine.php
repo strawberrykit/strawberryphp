@@ -45,7 +45,10 @@ class ParseEngine
         )
     {
         $data = json_decode(urldecode($payload), true);
+
+        # Uses parse_str for url-encoded form data
         if (!is_array($data)) parse_str($payload, $data);
+
         Self::map (
             data: $data,
             object: $request->payload()
