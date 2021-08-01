@@ -81,7 +81,7 @@ class ParseEngine
 
         # Adding forward slash if version is provided
         $version = isset($endpoints->version)
-                   ? $endpoints['version'].'/'
+                   ? $endpoints->version.'/'
                    : null;
 
         $resource = $endpoints->resource ?? null;
